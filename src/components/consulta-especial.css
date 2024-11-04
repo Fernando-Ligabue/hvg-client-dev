@@ -1,0 +1,109 @@
+.marcar-consulta-container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 3rem 0 5rem;
+}
+
+.wrapper-marcar-consulta {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.date-picker-container {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name{
+  color: #ff7f50;
+  font: 500 0.85rem "Montserrat", sans-serif;
+  padding: 0.5rem 0;
+}
+
+.react-datepicker__day--selected:not([aria-disabled=true]):hover, .react-datepicker__day--in-selecting-range:not([aria-disabled=true]):hover, .react-datepicker__day--in-range:not([aria-disabled=true]):hover, .react-datepicker__month-text--selected:not([aria-disabled=true]):hover, .react-datepicker__month-text--in-selecting-range:not([aria-disabled=true]):hover, .react-datepicker__month-text--in-range:not([aria-disabled=true]):hover, .react-datepicker__quarter-text--selected:not([aria-disabled=true]):hover, .react-datepicker__quarter-text--in-selecting-range:not([aria-disabled=true]):hover, .react-datepicker__quarter-text--in-range:not([aria-disabled=true]):hover, .react-datepicker__year-text--selected:not([aria-disabled=true]):hover, .react-datepicker__year-text--in-selecting-range:not([aria-disabled=true]):hover, .react-datepicker__year-text--in-range:not([aria-disabled=true]):hover,
+.react-datepicker__day--selected {
+  background-color: #ff7f50;
+  color: #FFF;
+}
+
+.input-fields-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.btn-submit-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.btn-submit-container button {
+  font-size: 1.3rem;
+  background-color: #ff7f50;
+  border: 1px solid #fff0;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit-container button:hover {
+  background-color: #ffffff;
+  border: 1px solid #ff7f50;
+  color: #ff7f50;
+}
+
+@media only screen and (min-width: 1025px) {
+  .input-field {
+    max-width: 375px !important;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .wrapper-marcar-consulta {
+    padding: 1rem;
+  }
+
+  .input-fields-container {
+    padding-right: 1rem;
+  }
+
+  .input-field {
+    max-width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper-marcar-consulta {
+    flex-direction: column;
+  }
+  
+  .date-picker-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .buttons-container {
+    flex-direction: column;
+  }
+}

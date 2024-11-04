@@ -1,0 +1,144 @@
+.animais-tabela-container {
+  text-align: center;
+  margin-top: 25px;
+  width: 100%;
+  max-width: 1280px;
+  overflow-x: scroll;
+}
+
+.animais-tabela-container::-webkit-scrollbar {
+  height: 0.3em;
+}
+
+.animais-tabela-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.animais-tabela-container::-webkit-scrollbar-thumb {
+  background-color: #ff7f50;
+  outline: 1px solid #ff7f5020;
+}
+
+.animais-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.animais-tabela th,
+.animais-tabela td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  height: 65px;
+}
+
+.animais-tabela th {
+  color: #ff7f50;
+  font-weight: 700;
+  border-bottom: 2px solid #ff7f50;
+  min-width: 175px;
+}
+
+.animais-tabela tr {
+  color: #000;
+  font-weight: 700;
+  border-bottom: 2px solid #000;
+  min-width: 175px;
+}
+
+.animais-tabela td:nth-child(even) {
+  background-color: #66666620;
+}
+
+.actions{
+  position: relative;
+}
+
+.ver-mais-button {
+  background-color: #ff7f50;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 25px;
+  border: 1px solid #FFF0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ver-mais-button:hover {
+  background-color: #fff;
+  color: #ff7f50;
+  border: 1px solid #ff7f50;
+}
+
+.ver-mais-button.active {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFF;
+  border: none;
+  color: #ff7f50;
+  padding: 15px 25px 15px;
+  border: 1px solid #FFF0;
+  border-radius: 20px 20px 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.more-information{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.more-information td {
+  color: #000;
+  font-weight: 700;
+  min-width: 175px;
+}
+
+/* expanded row */
+.wrapper-overlay{
+}
+.overlay{
+  background-color: #FFF;
+  margin: 1rem 0;
+}
+
+.container-infos {
+  position: relative;
+  padding: 2rem;
+  width: 100%;
+  text-align: justify;
+  border: 1px solid red;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.close-info{
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  cursor: pointer;
+}
+
+.observations{
+  padding-top: 2rem;
+}
+
+.saber-mais {
+  font-wight: 500;
+  color: #ff7f50;
+  background-color: #FFF0;
+  border-bottom: 1px solid #ff7f50;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.saber-mais.active-more {
+  font-weight: 300;
+  color: #ff7f50;
+}

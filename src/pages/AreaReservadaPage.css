@@ -1,0 +1,362 @@
+.wrapper-area-reservada {
+  background-color: #e9dbcf;
+  position: relative;
+}
+
+.container-area-reservada {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: #e9dbcf;
+}
+
+.header-area-reservada {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+
+.header-area-reservada-lin1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Alinha o logotipo à esquerda e o botão à direita */
+  align-items: center;
+}
+
+.header-area-reservada-lin1 > .logo {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px 30px;
+}
+
+.header-area-reservada-lin2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.coluna1 {
+  flex: 2;
+  padding: 10px;
+}
+
+.coluna2 {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #ff7f50; /* Cor laranja para o ponto ativo */
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.action-button {
+  background-color: #ffffff;
+  border: 1px solid #ff7f50;
+  color: #ff7f50;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #ff7f50;
+  border: 1px solid #fff0;
+  color: white;
+}
+
+.action-button.active {
+  background-color: #ff7f50;
+  border: 1px solid #fff0;
+  color: white;
+}
+
+.logout {
+  height: 40px;
+}
+
+.slide {
+  position: relative;
+  text-align: left;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.slide-title {
+  font-size: 1.8rem;
+  color: #ff7f50; /* Laranja */
+  font-weight: bold;
+  margin: 0 0 5px 0; /* Ajusta o espaçamento entre o título e o texto */
+}
+
+.slide-text {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+
+.paw-image {
+  position: absolute;
+  max-width: 170px;
+  right: 10px;
+  top: 10px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  animation: float 3s infinite alternate;
+}
+
+.slide-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.slide-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para o texto de boas-vindas */
+.welcome-message {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333; /* Cor do texto principal */
+  margin-right: 20px; /* Espaçamento entre o texto e o botão */
+}
+
+.welcome-message span {
+  color: #ff7f50; /* Cor laranja para o nome */
+  font-weight: bold;
+}
+
+.titulotabela {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 450px;
+}
+/* Estilo para o botão de área de cliente */
+.client-area-button {
+  font-size: 1em;
+  font-weight: bold;
+  color: #333; /* Cor do texto */
+  border: 2px solid #ff7f50; /* Borda laranja */
+  border-radius: 20px; /* Borda arredondada */
+  padding: 5px 15px; /* Espaçamento interno */
+  background-color: transparent; /* Fundo transparente */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 20px; /* Espaçamento entre o botão e o ícone */
+}
+
+/* Estilo para o efeito de hover do botão */
+.client-area-button:hover {
+  background-color: #ff7f50; /* Fundo laranja no hover */
+  color: #fff; /* Texto branco no hover */
+}
+
+.user-info {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Garante o alinhamento vertical dos itens */
+  gap: 10px; /* Espaçamento entre os itens */
+}
+
+.user-options {
+  display: flex;
+}
+/* Estilo para o ícone de logout */
+.logout-icon {
+  display: flex; /* Para garantir o alinhamento vertical */
+  align-items: center;
+  cursor: pointer;
+}
+
+/* modal css */
+.user-name {
+  cursor: pointer;
+}
+.user-modal {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-modal-content {
+  position: relative;
+  background-color: #ff7f50;
+  width: 100%;
+  max-width: 780px;
+  min-height: 70vh;
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.close-modal {
+  color: #fff;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.wrapper-username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #fff;
+  font: 400 1.8rem "Poppins", sans-serif;
+}
+
+.content-right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+  z-index: 99;
+}
+
+.user-info-field {
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff;
+  border-radius: 35px;
+  padding: 0.5rem 1rem;
+}
+.user-info-field small {
+  font-size: 0.8rem;
+  color: #999999;
+}
+
+.user-info-field p {
+  padding-bottom: 0.5rem;
+}
+
+.img-content-right {
+  position: absolute;
+  bottom: 0;
+  max-width: 230px;
+  right: 2rem;
+}
+
+footer.footer-area-reservada {
+  height: 50px;
+  width: 100%;
+  background-color: #ff7f50;
+}
+
+@media only screen and (max-width: 869px) {
+  .header-area-reservada-lin1 img {
+    margin-right: auto;
+  }
+
+  .user-info {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 469px) {
+  .header-area-reservada-lin1 {
+    flex-direction: column;
+  }
+
+  .user-info {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 1.5rem;
+  }
+
+  .user-options {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .paw-image {
+    max-width: 100px;
+    top: 0;
+    width: 100%;
+  }
+
+  .user-modal-content {
+    min-height: 90vh;
+  }
+  
+
+  .user-modal-content {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2rem 0.5rem;
+  }
+
+
+  .wrapper-username{
+    margin-top: 2.5rem;
+  }
+
+  .img-content-right {
+    position: absolute;
+    bottom: 0;
+    max-width: 110px;
+    right: 2rem;
+  }
+  
+}

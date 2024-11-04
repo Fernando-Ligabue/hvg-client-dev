@@ -1,0 +1,161 @@
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Alinha o logotipo à esquerda e o botão à direita */
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    width: 100%; /* Mantém a proporção original */
+    max-width: 300px;
+    padding: 20px 30px;
+}
+
+.client-area {
+    width: 100%;
+    max-width: max-content;
+    padding: 0.5rem 1.3rem;
+    background-color: white; /* Cor de fundo branca */
+    border: 2px solid #ff7f50; /* Cor da borda laranja */
+    border-radius: 60px; /* Bordas arredondadas */
+    color: black; /* Cor do texto */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Suaviza a transição */
+    font-size: large;
+}
+
+.client-area:hover {
+    background-color: #ff7f50; /* Cor de fundo laranja quando passar o mouse */
+    color: white; /* Cor do texto branca */
+}
+
+.client-area:focus {
+    outline: none; /* Remove o contorno padrão do foco */
+    background-color: #ff7f50; /* Cor de fundo laranja ao clicar */
+    color: white; /* Cor do texto branca */
+    box-shadow: 0 0 10px rgba(255, 127, 80, 0.5); /* Sombra ao redor do botão */
+}
+
+.wrapper-bordered-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 25%;
+}
+
+.bordered-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f3e5d8;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 3rem;
+    text-align: center;
+}
+
+
+.login-title {
+    font-size: 3rem; /* Tamanho grande para o título */
+    color: #ff7f50; /* Cor laranja */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem; /* Espaçamento abaixo do título */
+}
+
+/* Estilo para o botão */
+.login-button {
+    background-color: #ff7f50; /* Cor laranja */
+    color: #fff; /* Cor do texto branco */
+    font-size: 1.2em; /* Tamanho do texto */
+    font-weight: bold;
+    border: none; /* Remove a borda padrão */
+    border-radius: 30px; /* Borda arredondada */
+    padding: 10px 40px; /* Espaçamento interno */
+    margin-top: 10px;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Animação para o hover */
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+
+/* Efeito de hover no botão */
+.login-button:hover {
+    background-color: #e76e45; /* Cor mais escura no hover */
+}
+
+.container-login-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ff7f50;
+    height: 90px; 
+}
+
+.animais-wrapper {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animais-wrapper img{
+    position: absolute;
+    width: 100%;
+    max-width: 1280px;
+    bottom:-75px;
+}
+
+@media only screen and (max-width: 769px){
+    .animais-wrapper img{
+        bottom:-55px;
+    }
+}
+
+@media only screen and (max-width: 469px){
+    header {
+        padding: 0.8rem;
+    }
+    
+    .logo {
+        max-width: 300px;
+        padding: 10px;
+    }
+    
+    .client-area {
+        margin-left: auto;
+        font-size: 0.85rem;
+    }
+    
+    .wrapper-bordered-container {
+        padding: 0.5rem;
+    }
+
+    .bordered-container {
+        padding: 1rem;
+    }
+    
+
+    .animais-wrapper img{
+        bottom:-25px;
+    }
+}
+

@@ -1,0 +1,21 @@
+.wrapper-clinica-geral-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-consultas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem 0 3.5rem;
+}
+
+.iframe-consultas{
+    width: 100%;
+    max-width: 1280px;
+    height: 850px;
+}
